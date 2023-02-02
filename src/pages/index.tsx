@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Montserrat, Josefin_Slab } from "@next/font/google";
+import ControlSlider from "./control_slider";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
+const josefin_slab = Josefin_Slab({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -16,64 +18,59 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className="absolute w-full h-full grid items-center justify-center">
-        <main className=" top-0 bottom-0 p-6 justify-center flex flex-wrap gap-6 rounded-xl bg-slate-600">
-          <section className="max-w-2xl m-0 overflow-clip flex flex-col gap-2 rounded-xl p-3 bg-red-400">
-            <h1 className="font-extrabold text-center text-lg border-0 border-black border-b-2">
+      <div
+        className={
+          josefin_slab.className +
+          " absolute p-6 w-full h-full grid items-center justify-center"
+        }
+      >
+        <main className="top-0 bottom-0 p-6 justify-center flex flex-wrap gap-6 rounded-xl bg-white shadow-xl">
+          <section className="max-w-2xl m-0 overflow-clip flex flex-col gap-2 rounded-xl p-3 border">
+            <h1
+              className={
+                josefin_slab.className +
+                " font-extrabold text-2xl text-center border-0 border-black border-b-2"
+              }
+            >
               Controls
             </h1>
-            <div className="border p-3 rounded-lg gap-2 flex">
-              <div className="w-8 h-8 my-auto bg-white rounded-full"></div>
-              <h1 className="font-bold grow">Economy:</h1>
-              <input
-                className="float-right"
-                type="range"
-                id="climate"
-                name="climate"
-                min="0"
-                max="10"
-              />
+            <div className="flex px-4 pt-2">
+              <div className=" flex-1">
+                <label className="">Seed</label>
+                <input
+                  className="rounded-md px-2 w-24"
+                  id="seed"
+                  type="text"
+                  defaultValue={1865404532}
+                />
+              </div>
+              <label className="mx-4">Randomness</label>
+              <input className="w-24" id="seed" type="range" />
             </div>
-            <div className="border p-3 rounded-lg gap-2 flex">
-              <div className="w-8 h-8 my-auto bg-white rounded-full"></div>
-              <h1 className="font-bold grow">Climate:</h1>
-              <input
-                className="float-right"
-                type="range"
-                id="climate"
-                name="climate"
-                min="0"
-                max="10"
-              />
-            </div>
-            <div className="border p-3 rounded-lg gap-2 flex">
-              <div className="w-8 h-8 my-auto bg-white rounded-full"></div>
-              <h1 className="font-bold grow">Magic:</h1>
-              <input
-                className="float-right"
-                type="range"
-                id="climate"
-                name="climate"
-                min="0"
-                max="10"
-              />
-            </div>
-            <div className="border p-3 rounded-lg gap-2 flex">
-              <div className="w-8 h-8 my-auto bg-white rounded-full"></div>
-              <h1 className="font-bold grow">Trade:</h1>
-              <input
-                className="float-right"
-                type="range"
-                id="climate"
-                name="climate"
-                min="0"
-                max="10"
-              />
-            </div>
+            <ControlSlider
+              title={new Array("Poor", "Modest", "Rich")}
+              icon="\sack-dollar-solid.svg"
+              id="economy"
+            />
+            <ControlSlider
+              title={new Array("Outpost", "Township", "City")}
+              icon="\chess-rook-solid.svg"
+              id="population"
+            />
+            <ControlSlider
+              title={new Array("Dry", "Temperate", "Tropical")}
+              icon="\earth-asia-solid.svg"
+              id="climate"
+            />
+            <ControlSlider
+              title={new Array("Cold", "Mild", "Hot")}
+              icon="\fire-solid.svg"
+              id="temperature"
+            />
             <div className=" w-[24rem]"></div>
           </section>
-          <section className="max-w-2xl m-0 overflow-clip rounded-xl p-3 bg-blue-500">
-            <h1 className="mx-auto mb-2 font-extrabold text-center text-lg border-0 border-black border-b-2">
+          <section className="max-w-2xl m-0 overflow-clip text-lg rounded-xl p-3 shadow-inner bg-gradient-to-br from-parchment-300 to-parchment-400">
+            <h1 className="mx-auto mb-2 font-extrabold text-2xl text-center border-0 border-black border-b-2">
               Menu
             </h1>
             <li className="flex">
@@ -94,7 +91,7 @@ export default function Home() {
             <div className=" w-[24rem]"></div>
           </section>
         </main>
-      </body>
+      </div>
     </>
   );
 }
