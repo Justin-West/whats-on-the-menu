@@ -12,7 +12,6 @@ export default function ControlSlider({
 }) {
   const [slider, setSlide] = useState(1);
   const handleChange = (e) => {
-    console.log("setting level", e.target.value);
     if (e.target.value < 4) setSlide(0);
     else if (e.target.value < 8) setSlide(1);
     else setSlide(2);

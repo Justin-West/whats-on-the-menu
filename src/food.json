@@ -1,0 +1,32 @@
+{
+  "0": {
+    "name": "Corn Beef",
+    "price": 4.99,
+    "factors": [10, 0, 0, 10, 0],
+    "climate": 10,
+    "temperature": 0,
+    "water": 0,
+    "economy": 10,
+    "population": 0
+  },
+  "1": {
+    "name": "Turkey",
+    "price": 53.95,
+    "factors": [10, 0, 0, 5, 0],
+    "climate": 10,
+    "temperature": 0,
+    "water": 0,
+    "economy": 0,
+    "population": 0
+  },
+  "2": {
+    "name": "Potato",
+    "price": 246.01,
+    "factors": [0, 0, 0, 0, 0],
+    "climate": 0,
+    "temperature": 0,
+    "water": 0,
+    "economy": 0,
+    "population": 0
+  }
+}

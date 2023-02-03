@@ -1,10 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Montserrat, Josefin_Slab } from "@next/font/google";
+import { Suspense } from "react";
 import ControlSlider from "./control_slider";
+import Menu from "./menu";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const josefin_slab = Josefin_Slab({ subsets: ["latin"] });
+
+const range = 0;
+const rand = 0;
+
+const economy = 0;
+const population = 0;
+const climate = 0;
+const temperature = 0;
+const water = 0;
 
 export default function Home() {
   return (
@@ -67,29 +78,16 @@ export default function Home() {
               icon="\fire-solid.svg"
               id="temperature"
             />
+            <ControlSlider
+              title={new Array("Oceanic", "Coastal", "Inland")}
+              icon="\water-solid.svg"
+              id="water"
+            />
             <div className=" w-[24rem]"></div>
           </section>
-          <section className="max-w-2xl m-0 overflow-clip text-lg rounded-xl p-3 shadow-inner bg-gradient-to-br from-parchment-300 to-parchment-400">
-            <h1 className="mx-auto mb-2 font-extrabold text-2xl text-center border-0 border-black border-b-2">
-              Menu
-            </h1>
-            <li className="flex">
-              <p className="grow-0">Turkey</p>
-              <div className="dot"></div>
-              <p className="text-right grow-0">$20.00</p>
-            </li>
-            <li className="flex">
-              <p className="grow-0">Beef</p>
-              <div className="dot"></div>
-              <p className="text-right grow-0">$24.00</p>
-            </li>
-            <li className="flex">
-              <p className="grow-0">Chicken</p>
-              <div className="dot"></div>
-              <p className="text-right grow-0">$18.00</p>
-            </li>
-            <div className=" w-[24rem]"></div>
-          </section>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Menu />
+          </Suspense>
         </main>
       </div>
     </>
