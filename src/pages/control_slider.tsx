@@ -5,16 +5,20 @@ export default function ControlSlider({
   title,
   icon,
   id,
+  call,
 }: {
   title: Array<string>;
   icon: string;
-  id: string;
+  id: number;
+  call: Function;
 }) {
   const [slider, setSlide] = useState(1);
   const handleChange = (e) => {
     if (e.target.value < 4) setSlide(0);
     else if (e.target.value < 8) setSlide(1);
     else setSlide(2);
+
+    call(id, e.target.value);
   };
   return (
     <div className="border p-3 rounded-lg gap-2 flex">
@@ -36,7 +40,6 @@ export default function ControlSlider({
         min="0"
         max="10"
         defaultValue={5}
-        onChange={(e) => console.log(e.target.value)} // don't set state on all change as react will re-render
         onPointerUp={handleChange} // only set state when handle is released
       />
     </div>

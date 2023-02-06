@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Montserrat, Josefin_Slab } from "@next/font/google";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import ControlSlider from "./control_slider";
 import Menu from "./menu";
 
@@ -11,13 +11,14 @@ const josefin_slab = Josefin_Slab({ subsets: ["latin"] });
 const range = 0;
 const rand = 0;
 
-const economy = 0;
-const population = 0;
-const climate = 0;
-const temperature = 0;
-const water = 0;
-
 export default function Home() {
+  const [factors, setFactors] = useState([5, 0, 0, 0, 0]);
+
+  function handleUpdate(i: number, v: number) {
+    factors[i] = v;
+    let a = [factors[0], factors[1], factors[2], factors[3], factors[4]];
+    setFactors(a);
+  }
   return (
     <>
       <Head>
@@ -61,32 +62,37 @@ export default function Home() {
             <ControlSlider
               title={new Array("Poor", "Modest", "Rich")}
               icon="\sack-dollar-solid.svg"
-              id="economy"
+              id={0}
+              call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Outpost", "Township", "City")}
               icon="\chess-rook-solid.svg"
-              id="population"
+              id={1}
+              call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Dry", "Temperate", "Tropical")}
               icon="\earth-asia-solid.svg"
-              id="climate"
+              id={2}
+              call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Cold", "Mild", "Hot")}
               icon="\fire-solid.svg"
-              id="temperature"
+              id={3}
+              call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Oceanic", "Coastal", "Inland")}
               icon="\water-solid.svg"
-              id="water"
+              id={4}
+              call={handleUpdate}
             />
             <div className=" w-[24rem]"></div>
           </section>
           <Suspense fallback={<div>Loading...</div>}>
-            <Menu />
+            <Menu s={factors} />
           </Suspense>
         </main>
       </div>
