@@ -1,12 +1,19 @@
 {
-  "0": {
-    "name": "Cured Beef",
-    "price": 4.99,
-    "factors": [0, 0, 0, 0, 0]
-  },
-  "1": {
-    "name": "Steak",
-    "price": 53.95,
-    "factors": [10, 10, 10, 10, 10]
+  "food": {
+    "0": {
+      "name": "Cured Ham",
+      "price": 4.99,
+      "factors": [5, 0, 5, 5, 5]
+    },
+    "1": {
+      "name": "Steak",
+      "price": 53.95,
+      "factors": [10, 10, 5, 5, 5]
+    },
+    "2": {
+      "name": "Turkey",
+      "price": 23.95,
+      "factors": [10, 10, 5, 5, 5]
+    }
   }
 }

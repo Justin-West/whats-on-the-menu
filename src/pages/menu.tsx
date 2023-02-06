@@ -1,4 +1,4 @@
-import food from "../food.json";
+import items from "../food.json";
 type MenuItem = {
   name: string;
   price: number;
@@ -9,15 +9,19 @@ let createdMenu: Array<MenuItem> = [];
 function GenMenu(f: number[]) {
   createdMenu = [];
 
-  Object.keys(food).map((i) => {
+  Object.keys(items.food).map((i) => {
     let s = 0;
     for (let j = 0; j < 5; j++) {
-      let dis = Math.abs(f[j] - food[i].factors[j]);
+      let dis = Math.abs(f[j] - items.food[i].factors[j]);
       s += dis;
     }
     s *= 1 / 5;
 
-    if (s < 5) createdMenu.push({ name: food[i].name, price: food[i].price });
+    if (s <= 2.5)
+      createdMenu.push({
+        name: items.food[i].name,
+        price: items.food[i].price,
+      });
   });
   return createdMenu;
 }
