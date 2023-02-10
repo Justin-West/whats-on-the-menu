@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Montserrat, Josefin_Slab } from "@next/font/google";
-import { Suspense, useState } from "react";
+import { useState, Suspense } from "react";
 import ControlSlider from "./control_slider";
+import { food } from "../food.json";
 import Menu from "./menu";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -12,7 +13,7 @@ const range = 0;
 const rand = 0;
 
 export default function Home() {
-  const [factors, setFactors] = useState([5, 0, 0, 0, 0]);
+  const [factors, setFactors] = useState([5, 5, 5, 5, 5]);
 
   function handleUpdate(i: number, v: number) {
     factors[i] = v;
@@ -33,9 +34,13 @@ export default function Home() {
       <div
         className={
           josefin_slab.className +
-          " absolute p-6 w-full h-full grid items-center justify-center"
+          " p-6 flex flex-col items-center justify-center"
         }
       >
+        <h1 className=" text-white font-extrabold text-4xl">
+          Whats On The Menu!
+        </h1>
+
         <main className="top-0 bottom-0 p-6 justify-center flex flex-wrap gap-6 rounded-xl bg-white shadow-xl">
           <section className="max-w-2xl m-0 overflow-clip flex flex-col gap-2 rounded-xl p-3 border">
             <h1
@@ -46,7 +51,7 @@ export default function Home() {
             >
               Controls
             </h1>
-            <div className="flex px-4 pt-2">
+            {/* <div className="flex px-4 pt-2">
               <div className=" flex-1">
                 <label className="">Seed</label>
                 <input
@@ -58,7 +63,7 @@ export default function Home() {
               </div>
               <label className="mx-4">Randomness</label>
               <input className="w-24" id="seed" type="range" />
-            </div>
+            </div> */}
             <ControlSlider
               title={new Array("Poor", "Modest", "Rich")}
               icon="\sack-dollar-solid.svg"
@@ -91,9 +96,7 @@ export default function Home() {
             />
             <div className=" w-[24rem]"></div>
           </section>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Menu s={factors} />
-          </Suspense>
+          <Menu f={factors} />
         </main>
       </div>
     </>

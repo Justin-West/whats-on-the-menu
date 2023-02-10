@@ -10,11 +10,7 @@
 
 body {
   height: 100vh;
-  background-color: black;
-  background-image: url("https://unsplash.it/300/200?image=10");
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  backdrop-filter: blur(8px) brightness(40%);
+  background-color: rgb(47, 47, 47);
 }
 
 a {
