@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, Component } from "react";
-import { food } from "../food.json";
+import Food from "../food.json";
 
 type MenuItem = {
   name: string;
@@ -17,7 +17,7 @@ export default function Menu({ f }: { f: number[] }) {
   function GenMenu() {
     let m: MenuItem[] = new Array();
 
-    food.map((i) => {
+    Food.testFood.map((i) => {
       let score = 0;
 
       //-----econ-----
@@ -27,43 +27,35 @@ export default function Menu({ f }: { f: number[] }) {
       if (f[0] >= 5) priceMult = 1 + ((f[0] - 5) * (f[0] - 5) * power) / 20;
       else priceMult = 0.75 + f[0] / 20;
 
-      if (i.factors[0] >= 0) {
-        if (f[0] >= i.factors[0]) score += 1; //LOWPASS
+      if (i.econ >= 0) {
+        if (f[0] >= i.econ) score += 1; //LOWPASS
       } else {
-        if (f[0] <= Math.abs(i.factors[0])) score += 1; //HIGHPASS
+        if (f[0] <= 10 + i.econ) score += 1; //HIGHPASS
       }
 
       //-----scale-----
       // LOWPASS & randomly remove options
-      if (Math.random() < f[1] / 40 + 0.75) {
-        if (i.factors[1] >= 0) {
-          if (f[1] >= i.factors[1]) score += 1; //LOWPASS
-        } else {
-          if (f[1] <= Math.abs(i.factors[1])) score += 1; //HIGHPASS
-        }
-      }
+      if (Math.random() < f[1] / 40 + 0.75) score += 1;
 
       //-----climate-----
-      if (i.factors[2] >= 0) {
-        if (f[2] >= i.factors[2]) score += 1; //LOWPASS
+      if (i.climate >= 0) {
+        if (f[2] >= i.climate) score += 1; //LOWPASS
       } else {
-        if (f[2] <= Math.abs(i.factors[2])) score += 1; //HIGHPASS
+        if (f[2] <= 10 + i.climate) score += 1; //HIGHPASS
       }
 
       //-----temp-----
-      //DISTANCE
-      if (i.factors[3] >= 0) {
-        if (f[3] >= i.factors[3]) score += 1; //LOWPASS
+      if (i.temp >= 0) {
+        if (f[3] >= i.temp) score += 1; //LOWPASS
       } else {
-        if (f[3] <= Math.abs(i.factors[3])) score += 1; //HIGHPASS
+        if (f[3] <= 10 + i.temp) score += 1; //HIGHPASS
       }
 
       //-----water-----
-      //DISTANCE
-      if (i.factors[4] >= 0) {
-        if (f[4] >= i.factors[4]) score += 1; //LOWPASS
+      if (i.water >= 0) {
+        if (f[4] >= i.water) score += 1; //LOWPASS
       } else {
-        if (f[4] <= Math.abs(i.factors[4])) score += 1; //HIGHPASS
+        if (f[4] <= 10 + i.water) score += 1; //HIGHPASS
       }
 
       if (score >= 5) {

@@ -1,54 +1,70 @@
 {
-  "food": [
+  "skyrimFood": [
     {
-      "name": "Cured Ham",
-      "price": 0.3,
-      "factors": [0, 0, 0, 0, 2]
+      "name": "Apple Cabbage Stew",
+      "price": 8,
+      "econ": -6,
+      "climate": 0,
+      "temp": -7,
+      "water": 8
     },
     {
-      "name": "Honey Roasted Ham",
-      "price": 0.6,
-      "factors": [7, 4, 1, 4, 4]
+      "name": "Apple Dumpling",
+      "price": 3,
+      "econ": 5,
+      "climate": 0,
+      "temp": -7,
+      "water": 5
     },
     {
-      "name": "Lutefisk",
-      "price": 0.2,
-      "factors": [-5, 0, 0, -7, -7]
+      "name": "Apple Pie",
+      "price": 5,
+      "econ": 5,
+      "climate": 0,
+      "temp": -7,
+      "water": 5
     },
     {
-      "name": "Sea Bass",
-      "price": 0.3,
-      "factors": [5, 0, 0, 5, -7]
+      "name": "Baked Potatoes",
+      "price": 2,
+      "econ": 0,
+      "climate": 0,
+      "temp": 0,
+      "water": 0
     },
     {
-      "name": "Freshwater Salmon",
-      "price": 0.25,
-      "factors": [3, 0, -7, -7, 4]
+      "name": "Beef Stew",
+      "price": 8,
+      "econ": 3,
+      "climate": 0,
+      "temp": -8,
+      "water": 3
+    }
+  ],
+  "testFood": [
+    {
+      "name": "Anywhere",
+      "price": 0,
+      "econ": 0,
+      "climate": 0,
+      "temp": 0,
+      "water": 0
     },
     {
-      "name": "Arctic Salmon",
-      "price": 0.42,
-      "factors": [5, 0, 0, -4, -5]
+      "name": "Poor Dry Cold Oceanic",
+      "price": 0,
+      "econ": -1,
+      "climate": -1,
+      "temp": -1,
+      "water": -1
     },
     {
-      "name": "Ale",
-      "price": 0.04,
-      "factors": [0, 0, 0, 0, 0]
-    },
-    {
-      "name": "Block of Cheddar",
-      "price": 0.1,
-      "factors": [0, 0, 0, 0, 0]
-    },
-    {
-      "name": "Cheap Wine",
-      "price": 0.2,
-      "factors": [-8, 0, 0, 0, 0]
-    },
-    {
-      "name": "Fine Wine",
-      "price": 10,
-      "factors": [7, 0, 0, 0, 0]
+      "name": "Rich Tropical Hot Inland",
+      "price": 0,
+      "econ": 10,
+      "climate": 10,
+      "temp": 10,
+      "water": 10
     }
   ]
 }

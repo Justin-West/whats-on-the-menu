@@ -49,7 +49,7 @@ export default function Home() {
         </h1>
 
         <main className="top-0 bottom-0 p-6 justify-center flex flex-wrap gap-6 rounded-xl bg-white shadow-xl">
-          <section className="max-w-2xl m-0 overflow-clip flex flex-col gap-2 rounded-xl p-3 border">
+          <section className="noprint max-w-2xl m-0 overflow-clip flex flex-col gap-2 rounded-xl p-3 border">
             <h1
               className={
                 josefin_slab.className +
