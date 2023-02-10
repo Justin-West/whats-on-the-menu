@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ControlSlider({
-  title,
+  title = ["", "", ""],
   icon,
   id,
   call,
@@ -13,13 +13,13 @@ export default function ControlSlider({
   call: Function;
 }) {
   const [slider, setSlide] = useState(1);
-  const handleChange = (e) => {
+  function handleChange(e: any) {
     if (e.target.value < 4) setSlide(0);
     else if (e.target.value < 8) setSlide(1);
     else setSlide(2);
 
     call(id, e.target.value);
-  };
+  }
   return (
     <div className="border p-3 rounded-lg gap-2 flex">
       <Image
@@ -27,7 +27,7 @@ export default function ControlSlider({
         src={icon} //"\sack-dollar-solid.svg"
         width={100}
         height={100}
-        alt={id}
+        alt={"slider"}
       />
       <h1 className="font-bold text-lg my-auto grow text-center">
         {title[slider]}
@@ -35,11 +35,9 @@ export default function ControlSlider({
       <input
         className="float-right"
         type="range"
-        id={id}
-        name={id}
         min="0"
         max="10"
-        defaultValue={5}
+        defaultValue="5"
         onPointerUp={handleChange} // only set state when handle is released
       />
     </div>

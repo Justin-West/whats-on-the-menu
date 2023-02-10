@@ -23,7 +23,7 @@
     {
       "name": "Freshwater Salmon",
       "price": 0.25,
-      "factors": [3, 0, -7, 4, 4]
+      "factors": [3, 0, -7, -7, 4]
     },
     {
       "name": "Arctic Salmon",
@@ -43,7 +43,7 @@
     {
       "name": "Cheap Wine",
       "price": 0.2,
-      "factors": [0, 0, 0, 0, 0]
+      "factors": [-8, 0, 0, 0, 0]
     },
     {
       "name": "Fine Wine",
