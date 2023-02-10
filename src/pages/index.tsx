@@ -5,6 +5,13 @@ import { useState, Suspense } from "react";
 import ControlSlider from "./control_slider";
 import { food } from "../food.json";
 import Menu from "./menu";
+import { url } from "inspector";
+
+import iconMoney from "../assets/sack-dollar-solid.svg";
+import iconCity from "../assets/chess-rook-solid.svg";
+import iconClimate from "../assets/earth-asia-solid.svg";
+import iconTemp from "../assets/fire-solid.svg";
+import iconWater from "../assets/water-solid.svg";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const josefin_slab = Josefin_Slab({ subsets: ["latin"] });
@@ -66,31 +73,31 @@ export default function Home() {
             </div> */}
             <ControlSlider
               title={new Array("Poor", "Modest", "Rich")}
-              icon="\sack-dollar-solid.svg"
+              icon={iconMoney}
               id={0}
               call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Outpost", "Township", "City")}
-              icon="\chess-rook-solid.svg"
+              icon={iconCity}
               id={1}
               call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Dry", "Temperate", "Tropical")}
-              icon="\earth-asia-solid.svg"
+              icon={iconClimate}
               id={2}
               call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Cold", "Mild", "Hot")}
-              icon="\fire-solid.svg"
+              icon={iconTemp}
               id={3}
               call={handleUpdate}
             />
             <ControlSlider
               title={new Array("Oceanic", "Coastal", "Inland")}
-              icon="\water-solid.svg"
+              icon={iconWater}
               id={4}
               call={handleUpdate}
             />
