@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Montserrat, Josefin_Slab } from "@next/font/google";
 import { useState, Suspense } from "react";
 import ControlSlider from "./control_slider";
-import { food } from "../food.json";
 import Menu from "./menu";
 import { url } from "inspector";
 
