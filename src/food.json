@@ -1,70 +1,164 @@
 {
   "skyrimFood": [
     {
-      "name": "Apple Cabbage Stew",
-      "price": 8,
-      "econ": -6,
+      "name": "White Wheat Bread",
+      "price": 0.2,
+      "econ": -2,
       "climate": 0,
-      "temp": -7,
+      "temp": 1,
+      "water": 7
+    },
+    {
+      "name": "Rice Porridge with Almonds and Raisins",
+      "price": 0.3,
+      "econ": -3,
+      "climate": -2,
+      "temp": 1,
+      "water": 2
+    },
+    {
+      "name": "Beef Wellington",
+      "price": 0.8,
+      "econ": 6,
+      "climate": 2,
+      "temp": 1,
       "water": 8
     },
     {
-      "name": "Apple Dumpling",
-      "price": 3,
-      "econ": 5,
-      "climate": 0,
-      "temp": -7,
+      "name": "Veal Blanquette",
+      "price": 0.7,
+      "econ": 4,
+      "climate": 2,
+      "temp": 1,
+      "water": 7
+    },
+    {
+      "name": "Rack of Lamb",
+      "price": 1.1,
+      "econ": 7,
+      "climate": 2,
+      "temp": 1,
+      "water": 8
+    },
+    {
+      "name": "Venison with Red Wine Sauce",
+      "price": 1,
+      "econ": 4,
+      "climate": 2,
+      "temp": 2,
       "water": 5
     },
     {
-      "name": "Apple Pie",
-      "price": 5,
-      "econ": 5,
-      "climate": 0,
-      "temp": -7,
-      "water": 5
+      "name": "Roasted Pheasant with Grapes",
+      "price": 1.3,
+      "econ": 7,
+      "climate": 2,
+      "temp": 2,
+      "water": 6
     },
     {
-      "name": "Baked Potatoes",
-      "price": 2,
-      "econ": 0,
-      "climate": 0,
-      "temp": 0,
-      "water": 0
-    },
-    {
-      "name": "Beef Stew",
-      "price": 8,
-      "econ": 3,
-      "climate": 0,
-      "temp": -8,
-      "water": 3
-    }
-  ],
-  "testFood": [
-    {
-      "name": "Anywhere",
-      "price": 0,
-      "econ": 0,
-      "climate": 0,
-      "temp": 0,
-      "water": 0
-    },
-    {
-      "name": "Poor Dry Cold Oceanic",
-      "price": 0,
-      "econ": -1,
-      "climate": -1,
+      "name": "Lobster Bisque",
+      "price": 1.75,
+      "econ": 8,
+      "climate": 8,
       "temp": -1,
-      "water": -1
+      "water": -8
     },
     {
-      "name": "Rich Tropical Hot Inland",
-      "price": 0,
-      "econ": 10,
-      "climate": 10,
-      "temp": 10,
-      "water": 10
+      "name": "Baked Brie with Honey",
+      "price": 0.6,
+      "econ": 5,
+      "climate": 4,
+      "temp": 1,
+      "water": 3
+    },
+    {
+      "name": "Spiced Wine",
+      "price": 0.6,
+      "econ": 3,
+      "climate": 3,
+      "temp": -2,
+      "water": 3
+    },
+    {
+      "name": "Champagne",
+      "price": 3,
+      "econ": 9,
+      "climate": 3,
+      "temp": -2,
+      "water": 4
+    },
+    {
+      "name": "Fresh Fruit Platter (with melons, grapes, figs, and peaches)",
+      "price": 1.3,
+      "econ": 4,
+      "climate": 8,
+      "temp": 9,
+      "water": -2
+    },
+    {
+      "name": "Pastry Selection (such as almond tarts and cream puffs)",
+      "price": 1,
+      "econ": 7,
+      "climate": 2,
+      "temp": 3,
+      "water": 4
+    },
+    {
+      "name": "Marzipan Sweets",
+      "price": 0.6,
+      "econ": 5,
+      "climate": 2,
+      "temp": -1,
+      "water": 2
+    },
+    {
+      "name": "Honey Glazed Ham",
+      "price": 0.9,
+      "econ": 5,
+      "climate": 2,
+      "temp": 3,
+      "water": 7
+    },
+    {
+      "name": "Poached Salmon with Hollandaise Sauce",
+      "price": 1.3,
+      "econ": 7,
+      "climate": 7,
+      "temp": -1,
+      "water": -7
+    },
+    {
+      "name": "Asparagus with Hollandaise Sauce",
+      "price": 0.8,
+      "econ": 6,
+      "climate": 4,
+      "temp": -1,
+      "water": 4
+    },
+    {
+      "name": "Saffron Risotto",
+      "price": 0.8,
+      "econ": 6,
+      "climate": 4,
+      "temp": 1,
+      "water": 2
+    },
+    {
+      "name": "Venison Sausage",
+      "price": 0.7,
+      "econ": 4,
+      "climate": 2,
+      "temp": 2,
+      "water": 6
+    },
+    {
+      "name": "Stuffed Quail.",
+      "price": 1.1,
+      "econ": 7,
+      "climate": 2,
+      "temp": 2,
+      "water": 6
     }
   ]
 }
