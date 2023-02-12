@@ -17,7 +17,7 @@ export default function Menu({ f }: { f: number[] }) {
   function GenMenu() {
     let m: MenuItem[] = new Array();
 
-    Food.testFood.map((i) => {
+    Food.Europe.map((i) => {
       let score = 0;
 
       //-----econ-----
