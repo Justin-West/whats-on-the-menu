@@ -159,6 +159,326 @@
       "climate": 2,
       "temp": 2,
       "water": 6
+    },
+    {
+      "name": "Fresh Baked Trenchers",
+      "price": 0.15,
+      "econ": -3,
+      "climate": 0,
+      "temp": 0,
+      "water": 0
+    },
+    {
+      "name": "Groats Porridge",
+      "price": 0.1,
+      "econ": -5,
+      "climate": 0,
+      "temp": 0,
+      "water": -2
+    },
+    {
+      "name": "Beef in a Pot",
+      "price": 0.35,
+      "econ": -3,
+      "climate": 0,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Vegetable Pottage",
+      "price": 0.2,
+      "econ": -5,
+      "climate": 0,
+      "temp": 0,
+      "water": 0
+    },
+    {
+      "name": "Roasted Pork Belly",
+      "price": 0.45,
+      "econ": -2,
+      "climate": 0,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Sirloin of Beef",
+      "price": 0.65,
+      "econ": 1,
+      "climate": 0,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Venison Pasties",
+      "price": 0.4,
+      "econ": 2,
+      "climate": -2,
+      "temp": 0,
+      "water": 3
+    },
+    {
+      "name": "Mutton Stew",
+      "price": 0.3,
+      "econ": -2,
+      "climate": 0,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Cheddar Cheese Tarts",
+      "price": 0.25,
+      "econ": 0,
+      "climate": -2,
+      "temp": 0,
+      "water": 0
+    },
+    {
+      "name": "Nutbrown Ale",
+      "price": 0.04,
+      "econ": -2,
+      "climate": 0,
+      "temp": 0,
+      "water": 1
+    },
+    {
+      "name": "Claret",
+      "price": 1,
+      "econ": 2,
+      "climate": -3,
+      "temp": 0,
+      "water": -1
+    },
+    {
+      "name": "Rhenish",
+      "price": 0.8,
+      "econ": 3,
+      "climate": -3,
+      "temp": 0,
+      "water": -1
+    },
+    {
+      "name": "Apple Pies",
+      "price": 0.35,
+      "econ": -1,
+      "climate": 2,
+      "temp": 0,
+      "water": 1
+    },
+    {
+      "name": "Pear Tarts",
+      "price": 0.3,
+      "econ": -1,
+      "climate": 2,
+      "temp": 0,
+      "water": 1
+    },
+    {
+      "name": "Raisin Cakes",
+      "price": 0.2,
+      "econ": -2,
+      "climate": 2,
+      "temp": 0,
+      "water": 1
+    },
+    {
+      "name": "Candied Almonds",
+      "price": 0.15,
+      "econ": 2,
+      "climate": 4,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Spiced Walnuts",
+      "price": 0.15,
+      "econ": 1,
+      "climate": 4,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Hard-boiled Hen's Eggs",
+      "price": 0.05,
+      "econ": -3,
+      "climate": 0,
+      "temp": 0,
+      "water": 0
+    },
+    {
+      "name": "Pickled Turnips",
+      "price": 0.1,
+      "econ": -4,
+      "climate": -1,
+      "temp": 0,
+      "water": 0
+    },
+    {
+      "name": "Salt Cod with Peas.",
+      "price": 0.35,
+      "econ": -4,
+      "climate": -4,
+      "temp": 0,
+      "water": -7
+    },
+    {
+      "name": "Dark Rye Bread",
+      "price": null,
+      "econ": 0,
+      "climate": 0,
+      "temp": 0,
+      "water": 0
+    },
+    {
+      "name": "Barley Porridge",
+      "price": null,
+      "econ": -3,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Lentil Soup",
+      "price": null,
+      "econ": -3,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Peasant Stew (made with root vegetables and whatever meat was available)",
+      "price": null,
+      "econ": -5,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Grilled Bacon",
+      "price": null,
+      "econ": 1,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Boiled Salt Pork",
+      "price": null,
+      "econ": 0,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Game of the Day, Pheasant",
+      "price": null,
+      "econ": 2,
+      "climate": 0,
+      "temp": -5,
+      "water": 5
+    },
+    {
+      "name": "Root Vegetable Pottage",
+      "price": null,
+      "econ": -4,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Hard Cheese (such as aged Gouda)",
+      "price": null,
+      "econ": 4,
+      "climate": 0,
+      "temp": -5,
+      "water": 2
+    },
+    {
+      "name": "Small Ale",
+      "price": null,
+      "econ": -1,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Cider",
+      "price": null,
+      "econ": 2,
+      "climate": 0,
+      "temp": 0,
+      "water": 2
+    },
+    {
+      "name": "Dried Apples",
+      "price": null,
+      "econ": 0,
+      "climate": 0,
+      "temp": 2,
+      "water": 3
+    },
+    {
+      "name": "Dried Pears",
+      "price": null,
+      "econ": 0,
+      "climate": 0,
+      "temp": 2,
+      "water": 3
+    },
+    {
+      "name": "Dried Plums",
+      "price": null,
+      "econ": 0,
+      "climate": 0,
+      "temp": 2,
+      "water": 3
+    },
+    {
+      "name": "Roasted Chestnuts",
+      "price": null,
+      "econ": 1,
+      "climate": 0,
+      "temp": 2,
+      "water": 3
+    },
+    {
+      "name": "Hazelnuts",
+      "price": null,
+      "econ": 2,
+      "climate": 0,
+      "temp": 2,
+      "water": 3
+    },
+    {
+      "name": "Fried Eggs",
+      "price": null,
+      "econ": -2,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Pickled Cabbage",
+      "price": null,
+      "econ": -3,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
+    },
+    {
+      "name": "Smoked Herring",
+      "price": null,
+      "econ": -2,
+      "climate": 0,
+      "temp": -5,
+      "water": -3
+    },
+    {
+      "name": "Barley and Vegetable Soup.",
+      "price": null,
+      "econ": -3,
+      "climate": 0,
+      "temp": -5,
+      "water": 0
     }
   ]
 }
