@@ -85,7 +85,7 @@ export default function Menu({ f }: { f: number[] }) {
       }
 
       if (score >= 5) {
-        m.push(new MenuItem(i.name, priceMult * i.price.toFixed(2)));
+        m.push(new MenuItem(i.name, (priceMult * i.price).toFixed(2)));
       }
     });
     m = RandomReduce(m, entreCount);
