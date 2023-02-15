@@ -9,6 +9,9 @@ type MenuItem = {
 
 export default function Menu({ f }: { f: number[] }) {
   const [createdMenu, setMenu] = useState([{ name: "Loading...", price: "-" }]);
+  const entreCount = 7;
+  const sideCount = 10;
+  const drinkCount = 5;
 
   useEffect(() => {
     GenMenu();
@@ -17,7 +20,7 @@ export default function Menu({ f }: { f: number[] }) {
   function GenMenu() {
     let m: MenuItem[] = new Array();
 
-    Food.Europe.map((i) => {
+    Food.Europe.Mains.map((i) => {
       let score = 0;
 
       //-----econ-----
@@ -65,9 +68,25 @@ export default function Menu({ f }: { f: number[] }) {
         });
       }
     });
-
+    m = RandomReduce(m, entreCount);
     setMenu(m);
   }
+
+  function RandomReduce(items: MenuItem[], max: number) {
+    let m: MenuItem[] = new Array();
+    if (items[0]) {
+      while (m.length < max) {
+        let rand = Math.floor(Math.random() * items.length);
+        if (!items[0]) break;
+        if (items[rand]) {
+          m.push(items[rand]);
+          items.splice(rand, 1);
+        }
+      }
+    }
+    return m;
+  }
+
   return (
     <section className="max-w-2xl m-0 overflow-clip text-lg rounded-xl p-3 shadow-inner bg-gradient-to-br from-parchment-300 to-parchment-400">
       <h1 className="mx-auto mb-2 font-extrabold text-2xl text-center border-0 border-black border-b-2">
