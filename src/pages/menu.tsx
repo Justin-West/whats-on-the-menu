@@ -4,8 +4,8 @@ import Food from "../food.json";
 
 class MenuItem {
   name: string;
-  price: number;
-  constructor(name: string, price: number) {
+  price: any;
+  constructor(name: string, price: any) {
     this.name = name;
     this.price = price;
   }
