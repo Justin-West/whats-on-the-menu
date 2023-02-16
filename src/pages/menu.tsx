@@ -20,7 +20,7 @@ type MenuItemData = {
   water: number;
 };
 
-export default function Menu({ f }: { f: number[] }) {
+export default function Menu({ f, theme }: { f: number[]; theme: string }) {
   const [createdMenuMain, setMenuMain] = useState([
     new MenuItem("Loading...", 0),
   ]);
@@ -35,10 +35,16 @@ export default function Menu({ f }: { f: number[] }) {
   const drinkCount = 5;
 
   useEffect(() => {
-    setMenuMain(GenMenu(Food.Europe.Mains, entreCount));
-    setMenuSide(GenMenu(Food.Europe.Sides, sideCount));
-    setMenuDrink(GenMenu(Food.Europe.Drinks, drinkCount));
-  }, [f]);
+    if (theme == "Europe") {
+      setMenuMain(GenMenu(Food.Europe.Mains, entreCount));
+      setMenuSide(GenMenu(Food.Europe.Sides, sideCount));
+      setMenuDrink(GenMenu(Food.Europe.Drinks, drinkCount));
+    } else if (theme == "India") {
+      setMenuMain(GenMenu(Food.India.Mains, entreCount));
+      setMenuSide(GenMenu(Food.India.Sides, sideCount));
+      setMenuDrink(GenMenu(Food.India.Drinks, drinkCount));
+    }
+  }, [f, theme]);
 
   function GenMenu(items: MenuItemData[], limit: number) {
     let m = new Array<MenuItem>();
@@ -88,16 +94,18 @@ export default function Menu({ f }: { f: number[] }) {
         m.push(new MenuItem(i.name, (priceMult * i.price).toFixed(2)));
       }
     });
-    m = RandomReduce(m, entreCount);
+    m = RandomReduce(m, limit);
     return m;
   }
 
   function RandomReduce(items: MenuItem[], max: number) {
     let m: MenuItem[] = new Array();
-    if (items[0]) {
-      while (m.length < max) {
+    if (items[2]) {
+      let reduction = (10 - f[1]) / 2;
+      if (max - reduction == 0) reduction = 0;
+      while (m.length < max - reduction) {
         let rand = Math.floor(Math.random() * items.length);
-        if (!items[0]) break;
+        if (!items[2]) break;
         if (items[rand]) {
           m.push(items[rand]);
           items.splice(rand, 1);

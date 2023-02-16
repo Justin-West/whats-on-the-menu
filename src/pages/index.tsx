@@ -20,11 +20,20 @@ const rand = 0;
 
 export default function Home() {
   const [factors, setFactors] = useState([5, 5, 5, 5, 5]);
-
+  const [theme, setTheme] = useState("Europe");
   function handleUpdate(i: number, v: number) {
     factors[i] = v;
     let a = [factors[0], factors[1], factors[2], factors[3], factors[4]];
     setFactors(a);
+  }
+
+  function UpdateTheme() {
+    const e = document.getElementById("theme");
+    if (e) {
+      const value = e.value;
+      setTheme(value);
+      console.log(value);
+    }
   }
   return (
     <>
@@ -70,6 +79,11 @@ export default function Home() {
               <label className="mx-4">Randomness</label>
               <input className="w-24" id="seed" type="range" />
             </div> */}
+            <select name="theme" id="theme" onChange={UpdateTheme}>
+              <option value="Europe">Europe</option>
+              <option value="India">India</option>
+              <option value="China">China</option>
+            </select>
             <ControlSlider
               title={new Array("Poor", "Modest", "Rich")}
               icon={iconMoney}
@@ -102,7 +116,7 @@ export default function Home() {
             />
             <div className=" w-[24rem]"></div>
           </section>
-          <Menu f={factors} />
+          <Menu f={factors} theme={theme} />
         </main>
       </div>
     </>
