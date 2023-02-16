@@ -636,582 +636,462 @@
       {
         "name": "Basmati Rice",
         "price": 0.02,
-        "econ": 5,
-        "climate": 6,
-        "temp": 2,
-        "water": 3
+        "econ": 0,
+        "climate": 0,
+        "temp": 5,
+        "water": 5
       },
       {
         "name": "Biryani (rice dish with meat, spices, and nuts)",
         "price": 0.8,
-        "econ": 4,
-        "climate": 5,
-        "temp": 2,
+        "econ": -3,
+        "climate": 0,
+        "temp": 5,
         "water": 3
       },
       {
         "name": "Mughlai Korma (creamy meat stew)",
         "price": 1.2,
-        "econ": 4,
-        "climate": 4,
+        "econ": -4,
+        "climate": -5,
         "temp": 2,
-        "water": 2
+        "water": -2
       },
       {
         "name": "Tandoori Chicken",
         "price": 1,
-        "econ": 3,
+        "econ": -2,
         "climate": 5,
-        "temp": 3,
-        "water": 2
+        "temp": 7,
+        "water": 3
       },
       {
         "name": "Keema (minced meat dish)",
         "price": 1.2,
-        "econ": 4,
-        "climate": 4,
+        "econ": -1,
+        "climate": 0,
         "temp": 2,
-        "water": 2
+        "water": 0
       },
       {
         "name": "Shrimp Biryani",
         "price": 1.2,
-        "econ": 4,
+        "econ": -6,
         "climate": 5,
-        "temp": 2,
-        "water": 3
+        "temp": 5,
+        "water": 2
       },
       {
         "name": "Butter Chicken",
         "price": 1.2,
-        "econ": 4,
-        "climate": 4,
+        "econ": -2,
+        "climate": -2,
         "temp": 2,
-        "water": 2
+        "water": -2
       },
       {
         "name": "Seekh Kebab (spiced meat skewers)",
         "price": 1,
-        "econ": 3,
+        "econ": -1,
         "climate": 5,
-        "temp": 3,
-        "water": 2
+        "temp": 7,
+        "water": 0
       },
       {
         "name": "Tandoori Lobster",
         "price": 3,
-        "econ": 5,
-        "climate": 6,
-        "temp": 3,
-        "water": 4
+        "econ": 2,
+        "climate": 7,
+        "temp": 7,
+        "water": -8
       },
       {
         "name": "Stuffed Bell Peppers",
         "price": 0.8,
-        "econ": 3,
-        "climate": 5,
+        "econ": -1,
+        "climate": 0,
         "temp": 2,
-        "water": 2
+        "water": -5
       },
       {
         "name": "Chicken Jalfrezi (stir-fried chicken dish)",
         "price": 1,
-        "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
+        "econ": -3,
+        "climate": 2,
+        "temp": 2,
+        "water": -1
       },
       {
         "name": "Vegetable Curry",
         "price": 0.8,
-        "econ": 3,
-        "climate": 6,
+        "econ": -1,
+        "climate": 0,
         "temp": 2,
-        "water": 2
+        "water": 1
       },
       {
         "name": "Chicken Tikka Masala",
         "price": 1.2,
-        "econ": 4,
-        "climate": 4,
+        "econ": -2,
+        "climate": -2,
         "temp": 2,
-        "water": 2
+        "water": -2
       },
       {
         "name": "Mutton Rogan Josh",
         "price": 1.4,
-        "econ": 4,
-        "climate": 4,
+        "econ": -3,
+        "climate": -5,
         "temp": 2,
-        "water": 2
+        "water": -3
       },
       {
         "name": "Fish Curry",
         "price": 1,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 4
+        "econ": -3,
+        "climate": 5,
+        "temp": 5,
+        "water": 1
       },
       {
         "name": "Chana Masala (spiced chickpeas)",
         "price": 0.6,
-        "econ": 3,
-        "climate": 6,
+        "econ": 0,
+        "climate": 0,
         "temp": 2,
-        "water": 2
+        "water": 1
       },
       {
         "name": "Aloo Gobi (curry of potatoes and cauliflower)",
         "price": 0.8,
-        "econ": 3,
-        "climate": 6,
+        "econ": -1,
+        "climate": 0,
         "temp": 2,
         "water": 2
       },
       {
         "name": "Lentil Fritters (called \"vada\")",
         "price": 0.6,
-        "econ": 3,
-        "climate": 6,
+        "econ": -2,
+        "climate": 0,
         "temp": 2,
-        "water": 2
+        "water": -1
       },
       {
         "name": "Simple Dahl (lentil stew)",
         "price": 0.4,
-        "econ": 3,
-        "climate": 6,
+        "econ": 0,
+        "climate": -2,
         "temp": 2,
         "water": 2
       },
       {
         "name": "Vegetable Stir-Fry",
         "price": 0.8,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "econ": 1,
+        "climate": 0,
+        "temp": -2,
+        "water": 0
       },
       {
         "name": "Chicken or Mutton Curry",
         "price": 1.2,
-        "econ": 3,
-        "climate": 6,
+        "econ": -2,
+        "climate": -2,
         "temp": 2,
-        "water": 2
+        "water": -2
       },
       {
         "name": "Fried Fish",
         "price": 0.35,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
+        "econ": -4,
+        "climate": 5,
+        "temp": 5,
         "water": 2
       },
       {
         "name": "Lentil Soup",
         "price": 0.3,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "econ": -1,
+        "climate": -2,
+        "temp": -5,
+        "water": 1
       },
       {
         "name": "Rice and Vegetable Porridge",
         "price": 0.35,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "econ": 1,
+        "climate": 0,
+        "temp": -2,
+        "water": 3
       }
     ],
     "Sides": [
       {
-        "name": "Basmati Rice",
-        "price": 0.02,
+        "name": "Fresh Fruit Platter (with mangoes, pomegranates, and figs)",
+        "price": 1.2,
         "econ": 5,
-        "climate": 6,
-        "temp": 2,
-        "water": 3
+        "climate": 10,
+        "temp": 5,
+        "water": -8
       },
       {
-        "name": "Biryani (rice dish with meat, spices, and nuts)",
+        "name": "Pistachio Kulfi (Indian ice cream)",
+        "price": 0.6,
+        "econ": 2,
+        "climate": 5,
+        "temp": 5,
+        "water": -6
+      },
+      {
+        "name": "Almond Halwa (sweet pudding)",
         "price": 0.8,
-        "econ": 4,
-        "climate": 5,
-        "temp": 2,
-        "water": 3
-      },
-      {
-        "name": "Mughlai Korma (creamy meat stew)",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Tandoori Chicken",
-        "price": 1,
         "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
+        "climate": 0,
+        "temp": 5,
+        "water": -5
       },
       {
-        "name": "Keema (minced meat dish)",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
+        "name": "Saffron Rice Pudding",
+        "price": 0.6,
+        "econ": 2,
+        "climate": 0,
+        "temp": 5,
+        "water": -3
       },
       {
-        "name": "Shrimp Biryani",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 5,
-        "temp": 2,
-        "water": 3
+        "name": "Roasted Cashews",
+        "price": 0.4,
+        "econ": 1,
+        "climate": -5,
+        "temp": 0,
+        "water": -1
       },
       {
-        "name": "Butter Chicken",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
+        "name": "Chapati (unleavened flatbread)",
+        "price": 0.2,
+        "econ": 0,
+        "climate": -5,
+        "temp": 0,
+        "water": 0
       },
       {
-        "name": "Seekh Kebab (spiced meat skewers)",
-        "price": 1,
-        "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
-      },
-      {
-        "name": "Tandoori Lobster",
-        "price": 3,
+        "name": "Mango",
+        "price": 0.2,
         "econ": 5,
-        "climate": 6,
-        "temp": 3,
-        "water": 4
+        "climate": 10,
+        "temp": 10,
+        "water": -5
       },
       {
-        "name": "Stuffed Bell Peppers",
-        "price": 0.8,
+        "name": "Papaya",
+        "price": 0.2,
         "econ": 3,
-        "climate": 5,
-        "temp": 2,
-        "water": 2
+        "climate": 10,
+        "temp": 8,
+        "water": -4
       },
       {
-        "name": "Chicken Jalfrezi (stir-fried chicken dish)",
-        "price": 1,
-        "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
+        "name": "Jackfruit",
+        "price": 0.4,
+        "econ": 2,
+        "climate": 10,
+        "temp": 7,
+        "water": -2
       },
       {
-        "name": "Vegetable Curry",
-        "price": 0.8,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Chicken Tikka Masala",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Mutton Rogan Josh",
-        "price": 1.4,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Fish Curry",
-        "price": 1,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 4
-      },
-      {
-        "name": "Chana Masala (spiced chickpeas)",
-        "price": 0.6,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Aloo Gobi (curry of potatoes and cauliflower)",
-        "price": 0.8,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Lentil Fritters (called \"vada\")",
-        "price": 0.6,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Simple Dahl (lentil stew)",
+        "name": "Dates",
         "price": 0.4,
         "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "climate": 5,
+        "temp": 0,
+        "water": -1
       },
       {
-        "name": "Vegetable Stir-Fry",
-        "price": 0.8,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "name": "Cashews",
+        "price": 0.6,
+        "econ": 2,
+        "climate": 0,
+        "temp": 0,
+        "water": 0
       },
       {
-        "name": "Chicken or Mutton Curry",
-        "price": 1.2,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "name": "Rice Pudding (called \"kheer\")",
+        "price": 8,
+        "econ": 1,
+        "climate": -5,
+        "temp": 0,
+        "water": -4
       },
       {
-        "name": "Fried Fish",
-        "price": 0.35,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "name": "Samosas (filled pastry)",
+        "price": 0.6,
+        "econ": -2,
+        "climate": -5,
+        "temp": -2,
+        "water": -1
       },
       {
-        "name": "Lentil Soup",
+        "name": "Chutneys (spicy condiments)",
+        "price": 0.4,
+        "econ": -1,
+        "climate": 5,
+        "temp": 0,
+        "water": -2
+      },
+      {
+        "name": "Roti (unleavened flatbread)",
+        "price": 0.2,
+        "econ": 0,
+        "climate": -5,
+        "temp": 0,
+        "water": 0
+      },
+      {
+        "name": "Steamed Rice",
+        "price": 0.02,
+        "econ": 0,
+        "climate": 0,
+        "temp": 0,
+        "water": 0
+      },
+      {
+        "name": "Chana (chickpeas)",
         "price": 0.3,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "econ": -1,
+        "climate": 0,
+        "temp": 0,
+        "water": -1
       },
       {
-        "name": "Rice and Vegetable Porridge",
-        "price": 0.35,
+        "name": "Aloo (potatoes)",
+        "price": 0.25,
+        "econ": 0,
+        "climate": 0,
+        "temp": 0,
+        "water": 0
+      },
+      {
+        "name": "Bananas",
+        "price": 0.1,
         "econ": 3,
-        "climate": 6,
+        "climate": 5,
+        "temp": 8,
+        "water": -4
+      },
+      {
+        "name": "Guava",
+        "price": 0.2,
+        "econ": 2,
+        "climate": 10,
+        "temp": 7,
+        "water": -3
+      },
+      {
+        "name": "Tamarind",
+        "price": 0.25,
+        "econ": 1,
+        "climate": 5,
         "temp": 2,
-        "water": 2
+        "water": -2
+      },
+      {
+        "name": "Jaggery (unrefined sugar)",
+        "price": 0.05,
+        "econ": 0,
+        "climate": 5,
+        "temp": 0,
+        "water": -2
+      },
+      {
+        "name": "Peanuts",
+        "price": 0.15,
+        "econ": 1,
+        "climate": -5,
+        "temp": 0,
+        "water": -1
+      },
+      {
+        "name": "Bajji (vegetable fritters)",
+        "price": 0.3,
+        "econ": -2,
+        "climate": 5,
+        "temp": 0,
+        "water": -1
+      },
+      {
+        "name": "Coconut Chutney",
+        "price": 0.2,
+        "econ": -1,
+        "climate": 10,
+        "temp": 5,
+        "water": -2
+      },
+      {
+        "name": "Pickled Vegetables.",
+        "price": 0.25,
+        "econ": -2,
+        "climate": -5,
+        "temp": 0,
+        "water": -2
       }
     ],
     "Drinks": [
       {
-        "name": "Basmati Rice",
-        "price": 0.02,
-        "econ": 5,
-        "climate": 6,
-        "temp": 2,
-        "water": 3
-      },
-      {
-        "name": "Biryani (rice dish with meat, spices, and nuts)",
-        "price": 0.8,
-        "econ": 4,
-        "climate": 5,
-        "temp": 2,
-        "water": 3
-      },
-      {
-        "name": "Mughlai Korma (creamy meat stew)",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Tandoori Chicken",
-        "price": 1,
-        "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
-      },
-      {
-        "name": "Keema (minced meat dish)",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Shrimp Biryani",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 5,
-        "temp": 2,
-        "water": 3
-      },
-      {
-        "name": "Butter Chicken",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Seekh Kebab (spiced meat skewers)",
-        "price": 1,
-        "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
-      },
-      {
-        "name": "Tandoori Lobster",
-        "price": 3,
-        "econ": 5,
-        "climate": 6,
-        "temp": 3,
-        "water": 4
-      },
-      {
-        "name": "Stuffed Bell Peppers",
-        "price": 0.8,
-        "econ": 3,
-        "climate": 5,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Chicken Jalfrezi (stir-fried chicken dish)",
-        "price": 1,
-        "econ": 3,
-        "climate": 5,
-        "temp": 3,
-        "water": 2
-      },
-      {
-        "name": "Vegetable Curry",
-        "price": 0.8,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Chicken Tikka Masala",
-        "price": 1.2,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Mutton Rogan Josh",
-        "price": 1.4,
-        "econ": 4,
-        "climate": 4,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Fish Curry",
-        "price": 1,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 4
-      },
-      {
-        "name": "Chana Masala (spiced chickpeas)",
-        "price": 0.6,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Aloo Gobi (curry of potatoes and cauliflower)",
-        "price": 0.8,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Lentil Fritters (called \"vada\")",
-        "price": 0.6,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
-      },
-      {
-        "name": "Simple Dahl (lentil stew)",
+        "name": "Cardamom Lassi",
         "price": 0.4,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "econ": 2,
+        "climate": 5,
+        "temp": 0,
+        "water": 5
       },
       {
-        "name": "Vegetable Stir-Fry",
-        "price": 0.8,
+        "name": "Rose Petal Sherbet",
+        "price": 0.6,
         "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "climate": 10,
+        "temp": 5,
+        "water": 10
       },
       {
-        "name": "Chicken or Mutton Curry",
-        "price": 1.2,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "name": "Mango Lassi",
+        "price": 0.4,
+        "econ": 1,
+        "climate": 5,
+        "temp": 5,
+        "water": 0
       },
       {
-        "name": "Fried Fish",
-        "price": 0.35,
+        "name": "Saffron Tea.",
+        "price": 0.2,
         "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "climate": 0,
+        "temp": 0,
+        "water": -5
       },
       {
-        "name": "Lentil Soup",
-        "price": 0.3,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "name": "Chai (spiced tea)",
+        "price": 0.04,
+        "econ": -1,
+        "climate": -5,
+        "temp": -5,
+        "water": -5
       },
       {
-        "name": "Rice and Vegetable Porridge",
-        "price": 0.35,
-        "econ": 3,
-        "climate": 6,
-        "temp": 2,
-        "water": 2
+        "name": "Lassi (yogurt drink)",
+        "price": 0.4,
+        "econ": 0,
+        "climate": 5,
+        "temp": 0,
+        "water": 0
+      },
+      {
+        "name": "Salted Lassi (yogurt drink)",
+        "price": 0.2,
+        "econ": -2,
+        "climate": 5,
+        "temp": 0,
+        "water": 0
       }
     ]
   }
