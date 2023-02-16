@@ -28,7 +28,7 @@ export default function Home() {
   }
 
   function UpdateTheme() {
-    const e = document.getElementById("theme");
+    const e: any = document.getElementById("theme");
     if (e) {
       const value = e.value;
       setTheme(value);
